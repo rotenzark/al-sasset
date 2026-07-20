@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>al Sasset — Ristorante e pizzeria a Niguarda, Via Graziano 35, Milano</title>
+<meta name="description" content="Ristorante e pizzeria in Via Graziano 35 a Niguarda, Milano. Menu di mare e di terra, pizze dalla marinara alla frutti di mare, risotto alla milanese e ossobuco. 4,8 su 330 recensioni Google.">
+<link rel="canonical" href="https://rotenzark.github.io/al-sasset/">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="al Sasset — Ristorante Niguarda, Milano">
+<meta property="og:description" content="Mare o terra: il menu si sceglie così. Via Graziano 35, Niguarda. 4,8 su 330 recensioni.">
+<meta property="og:image" content="https://rotenzark.github.io/al-sasset/img/og-image.jpg">
+<meta property="og:url" content="https://rotenzark.github.io/al-sasset/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#12283C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,600;0,700;1,400&family=Gantari:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=1">
+</head>
+<body>
+
+<div id="intro" aria-hidden="true">
+  <svg viewBox="0 0 120 60" width="120" height="60" aria-hidden="true">
+    <path id="introOnda" d="M6 42c9 0 9-8 18-8s9 8 18 8 9-8 18-8 9 8 18 8 9-8 15-8" fill="none" stroke="#4FA3C7" stroke-width="3" stroke-linecap="round"/>
+    <path id="introMonte" d="M20 30l16-19 12 13 9-9 14 15z" fill="#E8792B"/>
+  </svg>
+</div>
+
+<a class="skip" href="#main">Salta al contenuto</a>
+
+<header class="top">
+  <a class="marchio" href="#hero">
+    <span class="marchio-nome">al Sasset</span>
+    <span class="marchio-sub">Ristorante Niguarda</span>
+  </a>
+  <nav id="mainNav" aria-label="Principale">
+    <a href="#menu" data-i18n="nav.menu">Il menu</a>
+    <a href="#pizze" data-i18n="nav.pizze">Le pizze</a>
+    <a href="#voci" data-i18n="nav.voci">Recensioni</a>
+    <a href="#dove" data-i18n="nav.dove">Dove siamo</a>
+    <a class="nav-tel" href="tel:+390266049085">02 6604 9085</a>
+  </nav>
+  <button id="langToggle" type="button" aria-label="Switch language / Cambia lingua">IT / EN</button>
+  <button id="burger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Apri il menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+<!-- ══════ HERO ══════ -->
+<section id="hero">
+  <div class="hero-foto">
+    <img src="img/facciata.jpg" width="1600" height="1200" alt="L'ingresso di al Sasset in Via Graziano 35 all'imbrunire, con l'insegna arancione e i tavolini apparecchiati fuori" data-i18n-alt="alt.facciata">
+  </div>
+  <div class="hero-testo">
+    <p class="occhiello" data-i18n="hero.occhiello">Via Graziano 35 · Niguarda, Milano</p>
+    <h1 id="heroTitolo">
+      <span class="riga" data-i18n="hero.t1">Stasera</span>
+      <span class="riga grande"><em class="mare" data-i18n="hero.t2">mare</em> <span class="o" data-i18n="hero.o">o</span> <em class="terra" data-i18n="hero.t3">terra</em>?</span>
+    </h1>
+    <p class="hero-p" data-i18n="hero.p">Il nostro menu è diviso così da sempre: antipasti di mare e di terra, primi di mare e di terra, secondi di mare e di terra. Scegliete da che parte stare — o prendete una pizza e non scegliete affatto.</p>
+    <div class="hero-cta">
+      <a class="btn btn-pieno" href="#menu" data-i18n="hero.cta1">Guarda il menu</a>
+      <a class="btn btn-vuoto" href="tel:+390266049085" data-i18n="hero.cta2">Prenota un tavolo</a>
+    </div>
+    <p class="hero-nota"><strong>4,8</strong> <span data-i18n="hero.nota">su 330 recensioni Google</span></p>
+  </div>
+</section>
+
+<!-- ══════ IL MENU CHE SI RIBALTA — sezione-firma ══════ -->
+<section id="menu">
+  <div class="menu-intro">
+    <h2 data-i18n="menu.h">Il menu</h2>
+    <p data-i18n="menu.p">Sette antipasti di mare, sette di terra. Cinque primi di mare, sette di terra. Sei secondi per parte. Da qualunque lato si cominci, si arriva in fondo.</p>
+  </div>
+
+  <!-- l'interruttore: elemento-FIRMA, deliberatamente NON .reveal -->
+  <div class="switch" role="tablist" aria-label="Scegli mare o terra">
+    <button class="lato lato-mare is-attivo" role="tab" aria-selected="true" aria-controls="p-mare" id="t-mare" data-i18n="sw.mare">Mare</button>
+    <span class="switch-o" aria-hidden="true">/</span>
+    <button class="lato lato-terra" role="tab" aria-selected="false" aria-controls="p-terra" id="t-terra" data-i18n="sw.terra">Terra</button>
+  </div>
+
+  <div class="pannelli">
+    <div class="pannello is-attivo" role="tabpanel" id="p-mare" aria-labelledby="t-mare">
+      <div class="portata">
+        <h3 data-i18n="m.anti">Antipasti</h3>
+        <ul class="voci">
+          <li><span class="v-nome" data-i18n="ma.a">Cocktail di gamberi</span><span class="v-prezzo">9&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ma.b">Tris di bruschette di mare</span><span class="v-prezzo">10&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ma.c">Insalata di mare</span><span class="v-prezzo">14&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ma.d">Carpaccio di salmone marinato agli agrumi con misticanza</span><span class="v-prezzo">14&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ma.e">Zuppetta di conchiglie all'isolana</span><span class="v-prezzo">15&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ma.f">Tentacolo di polipo arrosto, patate, rucola, pomodoro Pachino e olive taggiasche</span><span class="v-prezzo">15&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ma.g">Tartare di pesce secondo la disponibilità del giorno</span><span class="v-prezzo">17&nbsp;€</span></li>
+        </ul>
+      </div>
+      <div class="portata">
+        <h3 data-i18n="m.primi">Primi</h3>
+        <ul class="voci">
+          <li><span class="v-nome" data-i18n="mp.a">Spaghetti alle vongole</span><span class="v-prezzo">16&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="mp.b">Risotto ai sapori di mare</span><span class="v-prezzo">18&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="mp.c">Tagliolini con gambero rosso e pomodorini freschi</span><span class="v-prezzo">20&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="mp.d">Linguine con i frutti di mare al cartoccio</span><span class="v-prezzo">22&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="mp.e">Linguine con mezzo astice fresco</span><span class="v-prezzo">25&nbsp;€</span></li>
+        </ul>
+      </div>
+      <div class="portata">
+        <h3 data-i18n="m.secondi">Secondi</h3>
+        <ul class="voci">
+          <li><span class="v-nome" data-i18n="ms.a">Frittura di calamari, gamberi e verdure</span><span class="v-prezzo">18&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ms.b">Salmone grigliato con patate al forno</span><span class="v-prezzo">22&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ms.c">Zuppa di pesce</span><span class="v-prezzo">22&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ms.d">Pesce del giorno</span><span class="v-prezzo">25&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ms.e">Scampi e gamberi alla piastra con verdure in pinzimonio</span><span class="v-prezzo">25&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ms.f">Gran grigliata mista di pesce con pinzimonio di verdure</span><span class="v-prezzo">26&nbsp;€</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pannello" role="tabpanel" id="p-terra" aria-labelledby="t-terra" hidden>
+      <div class="portata">
+        <h3 data-i18n="m.anti2">Antipasti</h3>
+        <ul class="voci">
+          <li><span class="v-nome" data-i18n="ta.a">Focaccia bianca</span><span class="v-prezzo">5&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ta.b">Bresaola, rucola e grana</span><span class="v-prezzo">10&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ta.c">Mozzarella di bufala con insalatina di pomodorino Pachino e misticanza</span><span class="v-prezzo">12&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ta.d">Tagliere di formaggi</span><span class="v-prezzo">12&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ta.e">Prosciutto crudo con burrata di Andria</span><span class="v-prezzo">15&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ta.f">Tartare di manzo con rucola e pomodorini Pachino</span><span class="v-prezzo">18&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ta.g">Fritto misto</span><span class="v-prezzo">30&nbsp;€</span></li>
+        </ul>
+      </div>
+      <div class="portata">
+        <h3 data-i18n="m.primi2">Primi</h3>
+        <ul class="voci">
+          <li><span class="v-nome" data-i18n="tp.a">Spaghetti pomodoro e basilico</span><span class="v-prezzo">10&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="tp.b">Risotto alla milanese</span><span class="v-prezzo">13&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="tp.c">Risotto alla zucca con crema di taleggio</span><span class="v-prezzo">14&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="tp.d">Gnocchi alla sorrentina</span><span class="v-prezzo">15&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="tp.e">Spaghetti alla carbonara</span><span class="v-prezzo">15&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="tp.f">Tagliolini alla bolognese</span><span class="v-prezzo">15&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="tp.g">Ravioli di toma con crema di tartufo bianco</span><span class="v-prezzo">18&nbsp;€</span></li>
+        </ul>
+      </div>
+      <div class="portata">
+        <h3 data-i18n="m.secondi2">Secondi</h3>
+        <ul class="voci">
+          <li><span class="v-nome" data-i18n="ts.a">Hamburger Los Angeles con patate fritte</span><span class="v-prezzo">15&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ts.b">Galletto al forno con patate al forno</span><span class="v-prezzo">16&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ts.c">Tagliata di manzo al forno con Pachino, rucola e Parmigiano Reggiano</span><span class="v-prezzo">18&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ts.d">Costata</span><span class="v-prezzo">22&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ts.e">Costoletta alla milanese con rucola e pomodorini Pachino</span><span class="v-prezzo">25&nbsp;€</span></li>
+          <li><span class="v-nome" data-i18n="ts.f">Ossobuco</span><span class="v-prezzo">26&nbsp;€</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-extra">
+    <div class="extra-box">
+      <h3 data-i18n="ex.ins">Insalatone</h3>
+      <p data-i18n="ex.insp">Greca, Classica, Cesarina, Pescatore, Meneghina, Nizzarda. E il pokè con salmone e avocado.</p>
+      <p class="extra-prezzo">6 – 10&nbsp;€</p>
+    </div>
+    <div class="extra-box">
+      <h3 data-i18n="ex.cont">Contorni</h3>
+      <p data-i18n="ex.contp">Patate al forno o fritte, verdure alla griglia, purè, spinaci aglio olio e peperoncino.</p>
+      <p class="extra-prezzo">5&nbsp;€</p>
+    </div>
+    <div class="extra-box">
+      <h3 data-i18n="ex.bimbo">Menù bimbo</h3>
+      <p data-i18n="ex.bimbop">Pasta al pomodoro o pizza, con patatine fritte e bibita.</p>
+      <p class="extra-prezzo">10&nbsp;€</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ LE PIZZE ══════ -->
+<section id="pizze">
+  <div class="pizze-testa reveal">
+    <h2 data-i18n="pz.h">E poi ci sono le pizze</h2>
+    <p data-i18n="pz.p">Dodici classiche e undici speciali: la terza via, per chi non ha voglia di scegliere. La pizza che porta il nostro nome, però, sta dalla parte del mare.</p>
+  </div>
+  <div class="pizze-griglia">
+    <div class="pz-col reveal">
+      <h3 data-i18n="pz.cl">Classiche</h3>
+      <ul class="voci voci-pizza">
+        <li><span class="v-nome" data-i18n="pc.a">Marinara</span><span class="v-prezzo">5&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.b">Margherita</span><span class="v-prezzo">6,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.c">Napoli</span><span class="v-prezzo">7&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.d">Calzone classico</span><span class="v-prezzo">9&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.e">Diavola</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.f">Quattro stagioni</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.g">Quattro formaggi</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.h">Ortolana</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.i">Salsiccia e friarielli</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.l">Americana</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.m">Regina</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="pc.n">Bangla</span><span class="v-prezzo">9,50&nbsp;€</span></li>
+      </ul>
+    </div>
+    <div class="pz-col reveal">
+      <h3 data-i18n="pz.sp">Speciali</h3>
+      <ul class="voci voci-pizza">
+        <li><span class="v-nome" data-i18n="ps.a">Trentina</span><span class="v-prezzo">12&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.b">Golosa</span><span class="v-prezzo">12&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.c">Bufalina</span><span class="v-prezzo">12,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.d">Valtellina</span><span class="v-prezzo">12,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.e">Salmoncina</span><span class="v-prezzo">12,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.f">Purgatorio</span><span class="v-prezzo">12,50&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.g">Caprese</span><span class="v-prezzo">13&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.h">Burrosa</span><span class="v-prezzo">13&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.i">Inferno</span><span class="v-prezzo">13&nbsp;€</span></li>
+        <li class="pz-casa"><span class="v-nome" data-i18n="ps.l">al Sasset, ai frutti di mare</span><span class="v-prezzo">14&nbsp;€</span></li>
+        <li><span class="v-nome" data-i18n="ps.m">Fior di latte al tartufo</span><span class="v-prezzo">15&nbsp;€</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ RECENSIONI ══════ -->
+<section id="voci">
+  <h2 class="reveal" data-i18n="voci.h">Cosa scrivono</h2>
+  <p class="voci-sub reveal"><strong>4,8</strong> <span data-i18n="voci.sub">su 330 recensioni Google. Molte arrivano da chi passa da Milano e ci trova per caso.</span></p>
+  <div class="voci-griglia">
+    <blockquote class="reveal">
+      <p lang="en">«The risotto alla milanese was cooked to perfection.»</p>
+      <cite data-i18n="voci.c1">Recensione Google</cite>
+    </blockquote>
+    <blockquote class="reveal">
+      <p lang="en">«Me and my husband come to this restaurant for our last dinner in Milan.»</p>
+      <cite data-i18n="voci.c2">Recensione Google</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- qa-allow: hours-element-missing gli orari NON sono verificati: Google espone
+     solo il giorno corrente e la ricerca si ferma su un CAPTCHA. Niente tabella
+     oraria inventata — al suo posto il telefono. Da riempire quando il cliente
+     li fornisce. -->
+<!-- ══════ DOVE ══════ -->
+<section id="dove">
+  <div class="dove-info">
+    <h2 class="reveal" data-i18n="dove.h">Dove siamo</h2>
+    <p class="indirizzo reveal">Via Graziano 35<br>20162 Milano · Niguarda</p>
+    <p class="dove-p reveal" data-i18n="dove.p">Per prenotare un tavolo o sapere se siamo aperti, il modo più rapido è chiamare.</p>
+    <div class="dove-cta reveal">
+      <a class="btn btn-pieno" href="tel:+390266049085">02 6604 9085</a>
+      <a class="btn btn-vuoto" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Graziano+35+Milano" target="_blank" rel="noopener" data-i18n="dove.mappa">Apri in Maps</a>
+    </div>
+    <p class="dove-tag reveal" data-i18n="dove.tag">Locale LGBTQ+ friendly.</p>
+  </div>
+  <div class="dove-mappa reveal">
+    <iframe
+      title="Mappa: Via Graziano 35, Milano"
+      src="https://www.google.com/maps?q=Via%20Graziano%2035%2C%2020162%20Milano&output=embed"
+      width="600" height="450" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="foot-marchio">al Sasset <span class="foot-sub">Ristorante Niguarda</span></p>
+  <p>Via Graziano 35, 20162 Milano · <a href="tel:+390266049085">02 6604 9085</a></p>
+  <p class="foot-nota" data-i18n="foot.nota">Sito dimostrativo realizzato da Bespoke Studio.</p>
+</footer>
+
+<div id="actionBar">
+  <a href="tel:+390266049085" data-i18n="bar.tel">Prenota</a>
+  <a href="#menu" data-i18n="bar.menu">Il menu</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "al Sasset Ristorante Niguarda",
+  "image": "https://rotenzark.github.io/al-sasset/img/og-image.jpg",
+  "url": "https://rotenzark.github.io/al-sasset/",
+  "telephone": "+39 02 6604 9085",
+  "servesCuisine": ["Italiana", "Pesce", "Pizza"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Graziano 35",
+    "addressLocality": "Milano",
+    "postalCode": "20162",
+    "addressCountry": "IT"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "330" },
+  "priceRange": "€€"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Fate anche pesce o solo pizza?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Entrambi. Il menu è diviso in mare e terra a ogni portata: sette antipasti di mare e sette di terra, cinque primi di mare e sette di terra, sei secondi per parte. Le pizze sono a parte, dodici classiche e undici speciali." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costa mangiare da al Sasset?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Le pizze vanno dai 5 € della marinara ai 15 € della fior di latte al tartufo. I primi di terra partono da 10 €, quelli di mare da 16 €. Il menù bimbo costa 10 €." }
+    },
+    {
+      "@type": "Question",
+      "name": "Avete piatti milanesi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sì: risotto alla milanese 13 €, costoletta alla milanese 25 €, ossobuco 26 €. C'è anche l'insalatona Meneghina." }
+    },
+    {
+      "@type": "Question",
+      "name": "Dove siete e come si prenota?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In Via Graziano 35, a Niguarda, Milano. Per prenotare un tavolo si chiama il 02 6604 9085." }
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>
